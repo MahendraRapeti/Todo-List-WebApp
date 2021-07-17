@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do Project</title>
+    <style>
+        body{
+            margin:0px;
+            width:100vw;
+            height:100vh;
+            background:linear-gradient(to right,red,orange);
+            position: relative;
+        }
+        
+        #input{
+            width:500px;
+            height:30px;
+          background-color: bisque;
+          position: absolute;
+          left:50%;
+          transform: translate(-50%);
+          top:15%;
+          padding: 10px;
+          border: none;
+          outline: none;
+            
+        }
+        #input:focus{
+            background-color: lightblue;
+        }
+        #input:hover{
+            background-color: lightblue;
+        }
+        #btn{
+            position: absolute;
+            top:25%;
+            width:120px;
+            left:50%;
+            transform: translate(-50%);
+            border-radius: 10px;;
+            height:40px;
+            background: linear-gradient(to right,orange,red);
+            cursor: pointer;
+        }
+        #btn:hover{
+            background: linear-gradient(to right,blue,red);
+            border-radius: 15px;
+        }
+        #list{
+            position: absolute;
+            top:30%;
+            left:49%;
+            transform: translate(-50%);
+            list-style-type: none;
+           
+        }
+        #item{
+            background-color:orange;
+            width:500px;
+            height:auto;
+            min-height: 50px;
+            position: relative;
+            margin-bottom: 10px;;
+           text-align: left;
+           padding-left: 20px;
+           padding-top: 20px;
+            border:1px solid black;
+            box-shadow: 2px 2px 4px red;
+            font-size: 24px;
+            overflow-wrap:break-word;
+            line-height: 2;
+          
+        }
+        .btn1{
+            position: absolute;
+            left:90%;
+            top:10px;
+            padding: 10px;;
+            border: none;
+            background-color: orange;
+            font-size: 25px;
+            cursor:pointer;
+            opacity: 0.2;
+        }
+        h1{
+            position: absolute;
+            left:50%;
+            top:-20px;
+            transform: translate(-50%);
+        }
+        span{
+            font-size: 70px;
+            color:blue;
+        }
+        .btn1:hover{
+            opacity: 1;
+        }
+
+        @media (max-width:700px)
+        {
+            body{
+                margin:0px;
+            width:100vw;
+            height:100vh;
+            background:linear-gradient(to right,red,orange);
+            position: relative;
+            }
+            #input{
+            width:50%;
+            height:30px;
+          background-color: bisque;
+          position: absolute;
+          left:51%;
+          transform: translate(-50%);
+          top:15%;
+          padding: 10px;
+          border: none;
+          outline: none;
+            
+        }
+
+        #list{
+            position: absolute;
+            top:30%;
+            left:50%;
+            transform: translate(-50%);
+            list-style-type: none;
+           
+        }
+        #item{
+            background-color:orange;
+            width:250px;
+            height:auto;
+            min-height: 50px;
+            position: relative;
+            margin-bottom: 10px;;
+           text-align: left;
+           padding-left: 20px;
+           padding-top: 20px;
+            border:1px solid black;
+            box-shadow: 2px 2px 4px red;
+            font-size: 24px;
+            overflow-wrap:inherit;
+            line-height: 1.5;
+          
+        }
+        .btn1{
+            position: absolute;
+            left:80%;
+            top:10px;
+            padding: 10px;;
+            border: none;
+            background-color: orange;
+            font-size: 25px;
+            cursor:pointer;
+            opacity:0.2;
+        }
+        .btn1:hover{
+            opacity: 10;
+        }
+           input{
+               text-overflow: ellipsis;
+           }
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1><span id="head">Todo</span>list</h1>
+    <div id="todo">
+  
+    <input type="text" placeholder="Enter What Do You Want To Add Here..." id="input">
+    
+    <button id="btn">Add Todo</button>
+    <ul id="list">
+       
+    </ul>
+
+    
+   </div>
+
+   
+   
+  
+</body>
+<script src="./todo.js"></script>
+<script src="https://kit.fontawesome.com/d15ff1c66e.js" crossorigin="anonymous"></script>
+</html>
